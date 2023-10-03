@@ -1095,7 +1095,7 @@
 ** Attribute 3: Enable Web Server  (BOOL - TRUE/FALSE)
 */
 #ifndef ETN_IA_ENABLE_WEB_ENABLE
-   #define ETN_IA_ENABLE_WEB_ENABLE                FALSE
+   #define ETN_IA_ENABLE_WEB_ENABLE                TRUE
    #define ETN_IA_ENABLE_WEB_VALUE                 TRUE
 #endif
 
