@@ -73,7 +73,7 @@
    #define CCL_OBJ_ENABLE                          FALSE
 #endif
 #ifndef EIP_OBJ_ENABLE
-   #define EIP_OBJ_ENABLE                          FALSE
+   #define EIP_OBJ_ENABLE                          TRUE
 #endif
 #ifndef MOD_OBJ_ENABLE
    #define MOD_OBJ_ENABLE                          FALSE
@@ -99,7 +99,7 @@
    #define SYNC_OBJ_ENABLE                         ABCC_CFG_SYNC_ENABLE
 #endif
 #ifndef ETN_OBJ_ENABLE
-   #define ETN_OBJ_ENABLE                          FALSE
+   #define ETN_OBJ_ENABLE                          TRUE
 #endif
 #ifndef OPCUA_OBJ_ENABLE
    #define OPCUA_OBJ_ENABLE                        FALSE
