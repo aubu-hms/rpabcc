@@ -896,15 +896,15 @@
 ** Attribute 11: Enable CIP request forwarding (BOOL - TRUE/FALSE)
 */
 #ifndef EIP_IA_ENABLE_APP_CIP_OBJECTS_ENABLE
-   #define EIP_IA_ENABLE_APP_CIP_OBJECTS_ENABLE    FALSE
-   #define EIP_IA_ENABLE_APP_CIP_OBJECTS_VALUE     FALSE
+   #define EIP_IA_ENABLE_APP_CIP_OBJECTS_ENABLE    TRUE
+   #define EIP_IA_ENABLE_APP_CIP_OBJECTS_VALUE     TRUE
 #endif
 
 /*
 ** Attribute 12: Enable Parameter object (BOOL - TRUE/FALSE)
 */
 #ifndef EIP_IA_ENABLE_PARAM_OBJECT_ENABLE
-   #define EIP_IA_ENABLE_PARAM_OBJECT_ENABLE       FALSE
+   #define EIP_IA_ENABLE_PARAM_OBJECT_ENABLE       TRUE
    #define EIP_IA_ENABLE_PARAM_OBJECT_VALUE        TRUE
 #endif
 
@@ -928,7 +928,7 @@
 ** Attribute 15: Assembly object Configuration instance number (UINT16 - 0x0000-0xFFFF)
 */
 #ifndef EIP_IA_CONFIG_INSTANCE_ENABLE
-   #define EIP_IA_CONFIG_INSTANCE_ENABLE           FALSE
+   #define EIP_IA_CONFIG_INSTANCE_ENABLE           TRUE
    #define EIP_IA_CONFIG_INSTANCE_VALUE            0x0005
 #endif
 
@@ -993,8 +993,8 @@
 ** Attribute not used in the 40-series
 */
 #ifndef EIP_IA_ENABLE_APP_CIP_OBJECTS_EXT_ENABLE
-   #define EIP_IA_ENABLE_APP_CIP_OBJECTS_EXT_ENABLE   FALSE
-   #define EIP_IA_ENABLE_APP_CIP_OBJECTS_EXT_VALUE    FALSE
+   #define EIP_IA_ENABLE_APP_CIP_OBJECTS_EXT_ENABLE   TRUE
+   #define EIP_IA_ENABLE_APP_CIP_OBJECTS_EXT_VALUE    TRUE
 #endif
 
 /*
@@ -1019,8 +1019,8 @@
 ** Attribute 26: Enable EtherNet/IP QuickConnect (BOOL - TRUE/FALSE)
 */
 #ifndef EIP_IA_ENABLE_EIP_QC_ENABLE
-   #define EIP_IA_ENABLE_EIP_QC_ENABLE             FALSE
-   #define EIP_IA_ENABLE_EIP_QC_VALUE              FALSE
+   #define EIP_IA_ENABLE_EIP_QC_ENABLE             TRUE
+   #define EIP_IA_ENABLE_EIP_QC_VALUE              TRUE
 #endif
 
 /*
@@ -1055,7 +1055,7 @@
 ** Attribute 30: ABCC ADI Object number (UINT16 - 0x0064-0x00C7, 0x0300-0x04FF)
 */
 #ifndef EIP_IA_ABCC_ADI_OBJECT_ENABLE
-   #define EIP_IA_ABCC_ADI_OBJECT_ENABLE           FALSE
+   #define EIP_IA_ABCC_ADI_OBJECT_ENABLE           TRUE
    #define EIP_IA_ABCC_ADI_OBJECT_VALUE            0x00A2
 #endif
 
@@ -1087,7 +1087,7 @@
 ** Attribute 2: Enable Host IP Configuration Protocol  (BOOL - TRUE/FALSE)
 */
 #ifndef ETN_IA_ENABLE_HICP_ENABLE
-   #define ETN_IA_ENABLE_HICP_ENABLE               FALSE
+   #define ETN_IA_ENABLE_HICP_ENABLE               TRUE
    #define ETN_IA_ENABLE_HICP_VALUE                TRUE
 #endif
 
@@ -1111,7 +1111,7 @@
 ** Attribute 5: Enable Web ADI access  (BOOL - TRUE/FALSE)
 */
 #ifndef ETN_IA_ENABLE_WEB_ADI_ACCESS_ENABLE
-   #define ETN_IA_ENABLE_WEB_ADI_ACCESS_ENABLE     FALSE
+   #define ETN_IA_ENABLE_WEB_ADI_ACCESS_ENABLE     TRUE
    #define ETN_IA_ENABLE_WEB_ADI_ACCESS_VALUE      TRUE
 #endif
 
@@ -1541,7 +1541,7 @@
 ** Attribute 2: Supported languages (Array of ENUM - {ABP_LANG_*})
 */
 #ifndef APP_IA_SUP_LANG_ENABLE
-   #define APP_IA_SUP_LANG_ENABLE                  TRUE
+   #define APP_IA_SUP_LANG_ENABLE                  FALSE
    #define APP_IA_SUP_LANG_VALUE                   { ABP_LANG_ENG }
    #define APP_IA_SUP_LANG_ARRAY_SIZE              1
 #endif

@@ -555,7 +555,7 @@
 */
 #ifndef EIP_IA_VENDOR_ID_ENABLE
    #define EIP_IA_VENDOR_ID_ENABLE                 TRUE
-   #define EIP_IA_VENDOR_ID_VALUE                  0xFFFF
+   #define EIP_IA_VENDOR_ID_VALUE                  0x5A
 #endif
 
 /*
@@ -563,7 +563,7 @@
 */
 #ifndef EIP_IA_DEVICE_TYPE_ENABLE
    #define EIP_IA_DEVICE_TYPE_ENABLE               TRUE
-   #define EIP_IA_DEVICE_TYPE_VALUE                0xFFFF
+   #define EIP_IA_DEVICE_TYPE_VALUE                0x2B
 #endif
 
 /*
@@ -571,7 +571,7 @@
 */
 #ifndef EIP_IA_PRODUCT_CODE_ENABLE
    #define EIP_IA_PRODUCT_CODE_ENABLE              TRUE
-   #define EIP_IA_PRODUCT_CODE_VALUE               0xFFFF
+   #define EIP_IA_PRODUCT_CODE_VALUE               0x37
 #endif
 
 /*
@@ -579,8 +579,8 @@
 */
 #ifndef EIP_IA_REVISION_ENABLE
    #define EIP_IA_REVISION_ENABLE                  TRUE
-   #define EIP_IA_REVISION_MAJOR_VALUE             99
-   #define EIP_IA_REVISION_MINOR_VALUE             99
+   #define EIP_IA_REVISION_MAJOR_VALUE             1
+   #define EIP_IA_REVISION_MINOR_VALUE             1
 #endif
 
 /*
@@ -596,7 +596,7 @@
 */
 #ifndef EIP_IA_PRODUCT_NAME_ENABLE
    #define EIP_IA_PRODUCT_NAME_ENABLE              TRUE
-   #define EIP_IA_PRODUCT_NAME_VALUE               "Product Name"
+   #define EIP_IA_PRODUCT_NAME_VALUE               "PumpX"
 #endif
 
 #endif /* #if EIP_OBJ_ENABLE */
@@ -926,8 +926,8 @@
 ** network specific host object if existent and enabled.
 */
 #ifndef APP_IA_VENDOR_NAME_ENABLE
-   #define APP_IA_VENDOR_NAME_ENABLE               FALSE
-   #define APP_IA_VENDOR_NAME_VALUE                "Vendor Name"
+   #define APP_IA_VENDOR_NAME_ENABLE               TRUE
+   #define APP_IA_VENDOR_NAME_VALUE                "HMS Networks"
 #endif
 
 /*
@@ -948,10 +948,10 @@
 ** network specific host object if existent and enabled.
 */
 #ifndef APP_IA_FIRMWARE_VERSION_ENABLE
-   #define APP_IA_FIRMWARE_VERSION_ENABLE          FALSE
+   #define APP_IA_FIRMWARE_VERSION_ENABLE          TRUE
    #define APP_IA_FIRMWARE_VERSION_MAJOR_VALUE     1
-   #define APP_IA_FIRMWARE_VERSION_MINOR_VALUE     2
-   #define APP_IA_FIRMWARE_VERSION_BUILD_VALUE     3
+   #define APP_IA_FIRMWARE_VERSION_MINOR_VALUE     1
+   #define APP_IA_FIRMWARE_VERSION_BUILD_VALUE     4
 #endif
 
 /*

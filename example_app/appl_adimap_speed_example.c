@@ -79,8 +79,15 @@
 ** Data holder for the ADI instances
 **------------------------------------------------------------------------------
 */
-static UINT16 appl_iSpeed;
-static UINT16 appl_iRefSpeed;
+// outputs
+static UINT16 Pump_speed;
+static UINT16 Pump_torque;
+static UINT8 Mode;
+static UINT16 Pump_torque_limit;
+
+//inputs
+static UINT16 Actual_speed;
+static UINT16 Power_consumption;
 
 /*------------------------------------------------------------------------------
 ** Min, max and default value for appl_aiUint16
@@ -99,8 +106,10 @@ static AD_UINT16Type appl_sUint16Prop = { { 0, 0xFFFF, 0 } };
 */
 const AD_AdiEntryType APPL_asAdiEntryList[] =
 {
-   {  0x1,  "SPEED",     ABP_UINT16,   1, APPL_WRITE_MAP_READ_ACCESS_DESC, { { &appl_iSpeed,    &appl_sUint16Prop } } },
-   {  0x2,  "REF_SPEED", ABP_UINT16,   1, APPL_READ_MAP_WRITE_ACCESS_DESC, { { &appl_iRefSpeed, &appl_sUint16Prop } } }
+   {  0x1,  "PUMP_SPEED",        ABP_UINT16,   1, APPL_READ_MAP_WRITE_ACCESS_DESC, { { &Pump_speed,         &appl_sUint16Prop } } },
+   {  0x2,  "PUMP_TORQUE",       ABP_UINT16,   1, APPL_READ_MAP_WRITE_ACCESS_DESC, { { &Pump_torque,        &appl_sUint16Prop } } },
+   {  0x3,  "ACTUAL_SPEED",      ABP_UINT16,   1, APPL_WRITE_MAP_READ_ACCESS_DESC, { { &Actual_speed,       &appl_sUint16Prop } } },
+   {  0x4,  "POWER_CONSUMPTION", ABP_UINT16,   1, APPL_WRITE_MAP_READ_ACCESS_DESC, { { &Power_consumption,  &appl_sUint16Prop } } },
 };
 
 /*------------------------------------------------------------------------------
@@ -133,34 +142,7 @@ UINT16 APPL_GetNumAdi( void )
 
 void APPL_CyclicalProcessing( void )
 {
-   if( ABCC_AnbState() == ABP_ANB_STATE_PROCESS_ACTIVE )
-   {
-      /*
-      ** An example of ADI data handling.
-      */
-      if( appl_iSpeed > appl_iRefSpeed )
-      {
-         /*
-         ** Do something that lowers speed.
-         */
-         appl_iSpeed -= 1;
-      }
-      else if( appl_iSpeed < appl_iRefSpeed )
-      {
-         /*
-         ** Do something that increases speed.
-         */
-         appl_iSpeed += 1;
-      }
-   }
-   else
-   {
-      /*
-      ** We are not in process active, the default should be that the motor
-      ** should not run.
-      */
-      appl_iSpeed = 0;
-   }
+   // Put Application code here
 }
 
 /*******************************************************************************

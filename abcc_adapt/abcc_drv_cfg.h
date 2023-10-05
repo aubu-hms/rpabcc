@@ -59,7 +59,7 @@
    #define ABCC_CFG_DRV_SPI                           ( TRUE )
 #endif
 #ifndef ABCC_CFG_DRV_SERIAL
-   #define ABCC_CFG_DRV_SERIAL                        ( TRUE )
+   #define ABCC_CFG_DRV_SERIAL                        ( FALSE )
 #endif
 #ifndef ABCC_CFG_DRV_PARALLEL_30
    #define ABCC_CFG_DRV_PARALLEL_30                   ( FALSE )
