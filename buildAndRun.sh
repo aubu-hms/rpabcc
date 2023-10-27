@@ -1,4 +1,4 @@
 cd ./build/
 ninja
 cd ..
-./build/ABCC_host
+sudo ./build/ABCC_host
